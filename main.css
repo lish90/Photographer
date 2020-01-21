@@ -5,15 +5,15 @@
     box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
     font-family: "Ruhl";
     src: url("/font/GreatVibes-Regular.ttf");
 }
-@font-face{
+@font-face {
     font-family: "Ruhl Medium";
     src: url("/font/FrankRuhlLibre-Medium.ttf");
 }
-@font-face{
+@font-face {
     font-family: "Vibes";
     src: url("/font/FrankRuhlLibre-Regular.ttf");
 }
@@ -29,6 +29,41 @@ html {
     --background-color: #414141;
     --grey-text: #525252;
 }
+h1 {
+    font-size: var(--header1);
+  }
+  li,
+  button,
+  label,
+  input,
+  a,
+  p {
+    font-size: var(--text);
+  }
+  h2 {
+    font-size: var(--header2);
+  }
+  h3 {
+    font-size: var(--header3);
+  }
+  h4,
+  h5 {
+    font-size: var(--header4);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 body{
     font-family:"Rahul", sans-serif;
@@ -36,21 +71,6 @@ body{
 h1 {
     font-size:"Vibes", sans-serif;
 }
-ul{
-    list-style: none;
-}
-a { 
-   text-decoration: none;
-   color: black;
-} 
-.flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
 
 /* Nav section  */
 
@@ -90,11 +110,12 @@ nav{
 }
 .hero-introduction p{
     padding: 5rem 10rem;
+    color: var(--gray-text);
 }
 .hero-introduction h2{
     padding-top: 3rem;
 }
-.hero-introduction a{
+.hhero-introduction a{
     padding-top: 2rem 8rem;
     border: 3px solid black ;
     margin-bottom: 4rem;
@@ -104,8 +125,6 @@ nav{
     background: linear-gradient(#dad8dd, #dad1d4);
     position: relative;
     z-index: 1;
-    overflow: hidden;
-
 }
 .hero-elena{
     width: 100%;
@@ -117,6 +136,7 @@ nav{
     bottom: 0;
     left: -20%;
     z-index: -1;
+    max-height: 80%;
 }
 .plant2{
     left: -40%;
