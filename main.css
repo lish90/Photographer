@@ -317,3 +317,15 @@ grid-row: 1/3;
     transform: rotateZ(-45deg) translateY(-300%);
     background: white;
   }
+  
+/* GALLERY*/
+.gallery img {
+  grid-row: auto;
+  grid-column: auto;
+}
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.gallery-head {
+  display: none;
+}
