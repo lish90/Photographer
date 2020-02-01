@@ -42,25 +42,30 @@
   input,
   a,
   p {
+    color:whitesmoke;
     font-size: var(--text);
   }
   h2 {
+    color:whitesmoke;
     font-size: var(--header2);
   }
   h3 {
+    color:whitesmoke;
     font-size: var(--header3);
   }
   h4,
   h5 {
+    color:whitesmoke;
     font-size: var(--header4);
   }
   
   ul {
+    color:whitesmoke;
     list-style: none;
   }
   a {
     text-decoration: none;
-    color: black;
+    color:whitesmoke;
   }
 
   .flex {
@@ -70,6 +75,7 @@
     align-items: center;
   }
   body {
+    background: black;
     font-family: "Ruhl", sans-serif;
     animation: opening 1s ease-in-out forwards;
   }
@@ -79,7 +85,7 @@
   
   /* Nav Section */
   .main-head {
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px rgb(255, 255, 255);
     z-index: 2;
     position: relative;
   }
@@ -122,7 +128,7 @@
   }
   .hero-introduction a {
     padding: 2rem 8rem;
-    border: 3px solid black;
+    border: 3px solid whitesmoke;;
     margin-bottom: 4rem;
   }
   
