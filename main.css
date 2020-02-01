@@ -28,8 +28,8 @@
     --text: calc(1.5rem + 1vw);
     --big: calc(6rem + 1vw);
     --special-color: #906272;
-    --background-color: #414141;
-    --gray-text: #525252;
+    --background-color: #202020;
+    --gray-text: #f7f3f3;
     scroll-behavior: smooth;
   }
   
