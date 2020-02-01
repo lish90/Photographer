@@ -75,11 +75,13 @@
     align-items: center;
   }
   body {
+    color: whitesmoke;
     background: black;
     font-family: "Ruhl", sans-serif;
     animation: opening 1s ease-in-out forwards;
   }
   h1 {
+    
     font-family: "Vibes", sans-serif;
   }
   
@@ -102,11 +104,13 @@
     flex: 1 1 20rem;
   }
   .nav-links {
+    color: whitesmoke;
     display: flex;
     justify-content: space-around;
     flex: 1 1 20rem;
   }
   .hero {
+    color: whitesmoke;
     min-height: 90vh;
     width: 95%;
     margin: 0 0 0 auto;
@@ -121,7 +125,7 @@
   }
   .hero-introduction p {
     padding: 5rem 10rem;
-    color: var(--gray-text);
+    color: white;
   }
   .hero-introduction h2 {
     padding-top: 3rem;
@@ -236,8 +240,27 @@
   }
 
   /* Gallery */
-.gallery
-
+.gallery{
+  display: grid;
+  min-height: 90vh;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+.gallery img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery1 .gallery3{
+  grid-column: 1/5;
+}
+.gallery2{
+grid-row: 1/3;
+ 
+}
+/* .gallery4{
+  grid-column: 2/3;
+} */
 
 @media screen and (max-width:842px){
     .hero{
