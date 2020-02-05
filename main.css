@@ -305,17 +305,41 @@
 .contact img {
   flex: 1 1 40rem;
 }
+/* footer section */
+footer {
+  background: var(--background-color);
+  color: white;
+  display: flex;
+  padding: 3ren 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer ul{
+  display: flex;
+  flex: 1 1 40rem;
+  align-items: centre;
+}
+footer h4{
+  flex: 3 1 40rem;
+  font-size: cal(1.4rem + 1vw);
+}
+button:focus {
+  background: var(--background-color);
+  color: white;
+}
+input:focus {
+  border: 4px solid rgb(148, 148, 197);
+}
 
-
-
-
+ 
+/* media query */
 @media screen and (max-width:842px){
-    .hero{
-        widows: 100px;
-    }
-    .hero-introduction p{
-        padding: 5rem 3rem;
-    }
+  .hero{
+    widows: 100%;
+  }
+  .hero-introduction p{
+    padding: 5rem 3rem;
+  }
 }
     /* BURGER THING */
   .burger {
@@ -360,7 +384,7 @@
     transform: rotateZ(-45deg) translateY(-300%);
     background: white;
   }
-/* /* GALLERY */
+/* /* GALLERY  */
 
 @media screen and (max-width:842px){
 .gallery img {
@@ -376,4 +400,14 @@
 .contact img {
   display: none;
 } 
+}
+@media screen and (max-width:842px){
+footer ul {
+  order: 1;
+}
+footer h4 {
+  order: 2;
+  text-align: center;
+  padding: 1rem;
+  }
 }
